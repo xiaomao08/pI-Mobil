@@ -3,6 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  
+  <!-- ========== 🛡️ 安全防护（直接加好了） ========== -->
+  <meta http-equiv="Content-Security-Policy" 
+        content="default-src 'none'; 
+                 script-src 'unsafe-inline'; 
+                 style-src 'unsafe-inline'; 
+                 img-src data:; 
+                 connect-src 'none'; 
+                 font-src 'none'; 
+                 frame-src 'none'; 
+                 object-src 'none'; 
+                 base-uri 'self';">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  
   <title>蛋白质等电点 · 离子全动态解离模拟器</title>
   <style>
     * {
@@ -285,7 +300,7 @@
       <div class="btn-group">
         <span class="btn-group-label">🌍 环境</span>
         <button id="btn-lab" class="active">⚡ 电泳槽</button>
-        <button id="btn-bio">💧 人为模拟环境</button>
+        <button id="btn-bio">💧 生物体内</button>
       </div>
     </div>
 
